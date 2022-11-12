@@ -1,0 +1,105 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.5150412949867085 0.5313936239563581 0.6725721380468735 1.928322520814123
+  position -0.09871877273754126 -1.2923464014310628 4.435664877913967
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 2
+}
+Solid {
+  translation 1.31923 0.753318 0.05
+  rotation 0 0 1 0.785398
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
+}
+DEF rob1 E-puck {
+  translation 1.04885 -0.721144 0
+  name "rob1"
+  controller "purplebots"
+  supervisor TRUE
+  turretSlot [
+    GPS {
+    }
+  ]
+}
+DEF rob2 E-puck {
+  translation 0.0764774 -0.757803 0
+  name "rob2"
+  controller "purple_robots"
+  supervisor TRUE
+  turretSlot [
+    GPS {
+    }
+  ]
+}
+DEF epuck E-puck {
+  translation -1.2508 -0.719228 0
+  rotation 0 0 1 0.5
+  name "epuck"
+  controller "red_robot"
+  supervisor TRUE
+  turretSlot [
+    GPS {
+    }
+  ]
+}
+Wall {
+  translation -0.138513 0.416255 0
+  rotation 0 0 1 2
+  size 0.2 0.15 0.2
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 1
+    metalness 0
+  }
+}
+Wall {
+  translation 0.451142 -0.359782 0
+  rotation 0 0 1 2
+  name "wall(1)"
+  size 0.2 0.15 0.2
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 1
+    metalness 0
+  }
+}
+Wall {
+  translation -0.698754 -0.46748 0
+  rotation 0 0 1 2
+  name "wall(2)"
+  size 0.2 0.15 0.2
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 1
+    metalness 0
+  }
+}
+Wall {
+  translation 0.82859 0.547156 0
+  rotation 0 0 1 2
+  name "wall(3)"
+  size 0.2 0.15 0.2
+  appearance PBRAppearance {
+    baseColor 1 1 0
+    roughness 1
+    metalness 0
+  }
+}
